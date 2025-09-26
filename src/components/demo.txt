@@ -1,0 +1,20 @@
+// next.config.mjs
+export default {
+  output: 'export', // Enables static HTML export
+  images: {
+    unoptimized: true, // Disable image optimization for static export
+  },
+  trailingSlash: true, // Optional: Ensure URLs have trailing slashes
+};
+
+
+ for noraml build
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['webservicesindia.info'],
+  },
+};
+
+export default nextConfig;

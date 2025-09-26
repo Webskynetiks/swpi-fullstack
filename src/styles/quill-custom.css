@@ -1,0 +1,88 @@
+/* Quill Editor Custom Styling */
+.ql-editor ul {
+  list-style-type: disc !important;
+  margin-left: 1.5rem !important;
+  padding-left: 1.2rem !important;
+}
+
+.ql-editor ol {
+  list-style-type: decimal !important;
+  margin-left: 1.5rem !important;
+  padding-left: 1.2rem !important;
+}
+
+.ql-editor li {
+  display: list-item !important;
+  list-style-position: outside !important;
+  margin-bottom: 0.35rem !important;
+}
+
+/* Ensure list markers are visible */
+.ql-editor ul li::marker,
+.ql-editor ol li::marker {
+  color: #333 !important;
+  font-size: 1em !important;
+  font-weight: normal !important;
+}
+
+/* Fix for nested lists */
+.ql-editor ul ul {
+  list-style-type: circle !important;
+}
+
+.ql-editor ul ul ul {
+  list-style-type: square !important;
+}
+
+.ql-editor ol ol {
+  list-style-type: lower-alpha !important;
+}
+
+.ql-editor ol ol ol {
+  list-style-type: lower-roman !important;
+}
+
+/* Ensure proper spacing */
+.ql-editor {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* Fix toolbar button visibility */
+.ql-toolbar .ql-list button {
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  padding: 5px !important;
+  margin: 2px !important;
+}
+
+.ql-toolbar .ql-list button:hover {
+  background-color: #f0f0f0 !important;
+  border-radius: 3px !important;
+}
+
+.ql-toolbar .ql-list button.ql-active {
+  background-color: #e6f3ff !important;
+  color: #0066cc !important;
+  border-radius: 3px !important;
+}
+
+/* Ensure list icons are visible in toolbar */
+.ql-toolbar .ql-list button:before {
+  content: "" !important;
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.ql-toolbar .ql-list button[value="ordered"]:before {
+  content: "1." !important;
+  font-weight: bold !important;
+}
+
+.ql-toolbar .ql-list button[value="bullet"]:before {
+  content: "•" !important;
+  font-weight: bold !important;
+}
