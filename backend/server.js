@@ -52,6 +52,12 @@ app.use("/api", uploadRoutes);
 // PORT
 const PORT = process.env.PORT || 8080;
 
+
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
+
 // listen
 app.listen(PORT, () => {
   console.log(
