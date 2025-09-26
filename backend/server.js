@@ -46,8 +46,7 @@ app.use("/api", authRoutes);
 app.use("/api", registerRoutes);
 app.use("/api", uploadRoutes);
 
-// Note: Frontend is served separately in production
-// Use a reverse proxy (nginx) or deploy frontend and backend separately
+
 
 // PORT
 const PORT = process.env.PORT || 8080;
